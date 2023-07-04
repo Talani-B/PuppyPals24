@@ -1,12 +1,20 @@
 import { useState } from 'react'
+import {puppyList} from './data.js'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [puppies, setPuppies] = useState(puppyList)
+  console.log(puppyList)
 
   return (
     <>
-     
+     <div>
+     { 
+   puppies.map((puppy) => {
+     return <p>{puppy.name}</p>
+   })
+}
+     </div>
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
