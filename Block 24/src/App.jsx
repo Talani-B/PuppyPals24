@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import {puppyList} from './data.js'
+console.log(puppies)
 
 function App() {
 
@@ -17,7 +18,5 @@ function App() {
     </div>
   );
 }
-     
-    
 
 export default App
